@@ -34,7 +34,7 @@ namespace WebAddressbookTests
         }
 
         public string Password
-        {s
+        {
             get
             {
                 return password;
