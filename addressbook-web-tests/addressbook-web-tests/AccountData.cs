@@ -8,7 +8,7 @@ namespace WebAddressbookTests
 {
 
     //keep info about users; login and pass
-    class AccountData
+    public class AccountData
     {
         //поля класса
         private string username;
