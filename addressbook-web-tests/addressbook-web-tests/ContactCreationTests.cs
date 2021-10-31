@@ -18,15 +18,15 @@ namespace WebAddressbookTests
         [Test]
         public void ContactCreationTest()
         {
-            OpenMainPage();
-            Login(new AccountData("admin", "secret"));
-            GoToHomePage();
-            InitContactCreation();
+            navigator.OpenMainPage();
+            loginHelper.Login(new AccountData("admin", "secret"));
+            navigator.GoToHomePage();
+            contactHelper.InitContactCreation();
             ContactData contact = new ContactData("Marina", "Klippert");
-            FillContactForm(contact);
-            SubmitContactCreation();
-            ReturnToHomePage();
-            Logout();
+            contactHelper.FillContactForm(contact);
+            contactHelper.SubmitContactCreation();
+            contactHelper.ReturnToHomePage();
+            loginHelper.Logout();
         }
     }
 }
